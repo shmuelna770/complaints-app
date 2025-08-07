@@ -1,10 +1,13 @@
 import express from 'express'
 import { config } from 'dotenv'
-
+import {complaintRoutes} from './routes/complaints.js'
 config()
 const app = express()
 
-app.use(express.static())
+// app.use(express.static())
+app.use(express.json())
+app.use('/submit',complaintRoutes)
+
 const PORT = process.env.PORT || 3047
 
 app.listen(PORT,()=>{
