@@ -1,11 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+<html lang="he" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>שליחת תלונה אנונימית</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section id="main">
+      <section>
+        <h1 id="description">שליחת תלונה אנונימית</h1>
+      </section>
+      <form action="/submit" method="POST">
+        <label for="category" id="cagBtm">תחום תלונה</label>
+        <select name="category" id="category" required>
+          <option value="">בחר</option>
+          <option value="food">אוכל</option>
+          <option value="equipment">ציוד</option>
+          <option value="orders">פקודות</option>
+          <option value="else">אחר</option>
+        </select>
+
+       
+        <textarea
+          name="message"
+          id="message"
+          rows="5"
+          placeholder="הקלד את תלונתך:"
+          required
+        ></textarea>
+
+        <button type="submit" id="sendBtn">שלח תלונה</button>
+      </form>
+    </section>
+  </body>
 </html>

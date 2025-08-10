@@ -8,33 +8,55 @@ section#main {
     margin-left: 33%;
     border-radius: 15px;
 }
-h2#welcome{
-margin-left: 33.3%;
+
+h2#welcome {
+    margin-right: 33.3%;
 
 }
-h1#description{
+
+h1#description {
     font-style: italic;
-    margin-left: 8%;
+    margin-right: 8%;
 }
-p#explain{
+
+p#explain {
     font-style: inherit;
+    margin-right: 7%;
 
 }
 
-nav#buttom{
+nav#buttom {
     font-size: xx-large;
     display: inline-block;
     background-color: rgb(47, 39, 200);
-    margin-left: 37%;
+    margin-right: 35%;
     width: 110px;
     height: 50px;
     border-radius: 3rem;
 
 }
-a#buttom{
+
+a#buttom {
     font-size: 1.8rem;
     margin-bottom: 10%;
-    margin-left: 11%;
+    margin-right: 11%;
     color: rgb(245, 246, 247);
 
+}
+h1#description{
+    margin-right: 20%;
+    font-size: 1.7rem;
+}
+label#cagBtm{
+    margin-right:30%;
+    font-size: 1.5rem;
+}
+textarea#message{
+    margin-right: 28%;
+    margin-top: 7%;
+
+}
+button#sendBtn{
+    margin-right: 42%;
+    margin-top: 7%;
 }
