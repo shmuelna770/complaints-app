@@ -1,9 +1,15 @@
 import { createComplaintD } from "../models/complaint.model.js";
 
-export async function createComplaint(req, res) {
-    const newComplaints = req.body 
+export const createComplaint = async(req, res)=> {
+    const newComplaints = await req.body 
+    console.log('body',newComplaints);
+    
     const category = newComplaints.category
     const message = newComplaints.message
+    console.log('newcompl',newComplaints);
+    console.log('msg',message);
+    
+    
     try {
         await createComplaintD({category:category,message:message});
         res.status(201).json({msg:"compalaint added"})
