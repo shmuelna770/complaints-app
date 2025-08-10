@@ -4,7 +4,7 @@ import {complaintRoutes} from './routes/complaints.js'
 config()
 const app = express()
 
-// app.use(express.static())
+app.use(express.static("./public"))
 app.use(express.json())
 app.use('/submit',complaintRoutes)
 
