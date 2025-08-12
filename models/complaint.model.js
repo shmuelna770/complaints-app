@@ -5,3 +5,8 @@ export async function createComplaintD(complaint) {
     const result = await db.collection('complaints').insertOne(complaint);
     return result.insertedId;
 }
+
+export async function getAllCompD() {
+    const db = await connect();
+    return await db.collection('complaints').find().toArray()
+}
