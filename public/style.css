@@ -7,6 +7,7 @@ section#main {
     margin-right: 33%;
     margin-left: 33%;
     border-radius: 15px;
+    
 }
 
 h2#welcome {
@@ -16,30 +17,27 @@ h2#welcome {
 
 h1#description {
     font-style: italic;
-    margin-right: 8%;
+    margin-left: 6%; 
 }
 
 p#explain {
     font-style: inherit;
     margin-right: 7%;
-
 }
 
-nav#buttom {
+.buttom {
     font-size: xx-large;
-    display: inline-block;
     background-color: rgb(47, 39, 200);
-    margin-right: 35%;
     width: 110px;
     height: 50px;
     border-radius: 3rem;
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 a#buttom {
-    font-size: 1.8rem;
-    margin-bottom: 10%;
-    margin-right: 11%;
+      font-size: 1.1rem;
     color: rgb(245, 246, 247);
 
 }
@@ -59,4 +57,20 @@ textarea#message{
 button#sendBtn{
     margin-right: 42%;
     margin-top: 7%;
+}
+a#buttom2 {
+      font-size: 1.1rem;
+    color: rgb(245, 246, 247);
+}
+section#buttoms{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+h1#con{
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    
 }
